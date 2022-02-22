@@ -9,7 +9,9 @@
     "package-check": "package-json-note --check",
     "test": "jest --config jest.config.base.js",
     "test:ts-jest": "jest --config jest.config.ts-jest.js",
-    "test:babel-jest": "jest --config jest.config.babel-jest.js"
+    "test:babel-jest": "jest --config jest.config.babel-jest.js",
+    "test:swc-jest": "jest --config jest.config.swc-jest.js",
+    "test:esbuild-jest": "jest --config jest.config.esbuild-jest.js"
   },
   "keywords": [],
   "author": "hrb-yamamoto-katsuya",
@@ -18,6 +20,7 @@
     "@babel/core": "7.17.5",
     "@babel/preset-env": "7.16.11",
     "@babel/preset-typescript": "7.16.7",
+    "@swc/core": "1.2.143",
     "@swc/jest": "0.2.17",
     "@types/jest": "27.4.0",
     "@types/node": "17.0.19",
