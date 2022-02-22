@@ -7,5 +7,7 @@ const baseConfig = require("./jest.config.base");
  */
 module.exports = {
   ...baseConfig,
-  preset: "ts-jest",
+  transform: {
+    "\\.[jt]sx?$": "babel-jest",
+  },
 };
